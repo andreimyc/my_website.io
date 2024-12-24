@@ -443,3 +443,29 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* Стили для счетчика корзины */
+.cart-link {
+    position: relative;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: var(--accent-color);
+    color: var(--white);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Скрываем счетчик, когда корзина пуста */
+.cart-counter:empty {
+    display: none;
+}
