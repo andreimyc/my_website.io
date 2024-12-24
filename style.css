@@ -337,7 +337,7 @@ footer a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для пустой корзины (левый блок) */
+/* Стили для пустой корзины */
 .empty-cart {
     text-align: center;
     padding: 2rem;
@@ -353,11 +353,34 @@ footer a:hover {
     opacity: 0.2;
 }
 
+.empty-cart h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 .empty-cart p {
     color: var(--dark-gray);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
+}
+
+/* Единый стиль для кнопок системы */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--accent-color), #e67e22);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
 }
 
 /* Стили для правого блока при пустой корзине */
