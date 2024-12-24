@@ -94,7 +94,8 @@ function displayCart() {
             <div class="cart-layout">
                 <div class="cart-left">
                     <div class="empty-cart">
-                        <p>Корзина пуста</p>
+                        <h2>Корзина пуста</h2>
+                        <p>Добавьте товары для оформления заказа</p>
                         <a href="index.html" class="btn">Перейти к покупкам</a>
                     </div>
                 </div>
