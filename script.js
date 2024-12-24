@@ -69,7 +69,7 @@ function displayCart() {
     if (!cartContainer) return;
 
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    cart = cartItems; // Синхронизируем локальную переменную cart
+    cart = cartItems;
     
     if (cartItems.length === 0) {
         cartContainer.innerHTML = `
@@ -78,6 +78,12 @@ function displayCart() {
                     <div class="empty-cart">
                         <p>Корзина пуста</p>
                         <a href="index.html" class="btn">Перейти к покупкам</a>
+                    </div>
+                </div>
+                <div class="cart-right">
+                    <div class="checkout-placeholder">
+                        <h2>Оформление заказа</h2>
+                        <p>Добавьте товары в корзину для оформления заказа</p>
                     </div>
                 </div>
             </div>`;
