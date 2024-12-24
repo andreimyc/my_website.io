@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <svg class="logo" viewBox="0 0 100 100" width="50" height="50">
+                <circle cx="50" cy="50" r="45" fill="#4CAF50"/>
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="30">LC</text>
+            </svg>
+        </a>
+        <nav>
+            <a href="index.html">Продукция</a>
+            <a href="cart.html">Корзина</a>
+        </nav>
+    </header>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="images/socket.png" alt="Розетка">
+            <h3>Розетка</h3>
+            <p>Цена: 1000 ₽</p>
+            <button onclick="addToCart(1)">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="images/switch.jpg" alt="Выключатель">
+            <h3>Выключатель</h3>
+            <p>Цена: 2000 ₽</p>
+            <button onclick="addToCart(2)">В корзину</button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="about.html">© 2024 О нас</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
