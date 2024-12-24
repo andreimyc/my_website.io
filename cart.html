@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Шапка сайта -->
     <header>
+        <!-- Логотип с анимацией при наведении -->
         <a href="index.html" class="logo-container">
             <svg class="logo" viewBox="0 0 100 100" width="50" height="50">
                 <circle cx="50" cy="50" r="45" fill="var(--success)"/>
                 <text x="50" y="60" text-anchor="middle" fill="white" font-size="30">LC</text>
             </svg>
         </a>
+        <!-- Навигационное меню -->
         <nav>
             <a href="index.html">Продукция</a>
             <a href="cart.html">Корзина</a>
         </nav>
     </header>
 
+    <!-- Контейнер корзины с динамическим содержимым -->
     <div class="cart-container">
         <div id="cart-items"></div>
     </div>
 
+    <!-- Подвал сайта -->
     <footer>
         <a href="about.html">© 2024 О нас</a>
     </footer>
     
+    <!-- Подключение скриптов -->
     <script src="script.js"></script>
 </body>
 </html> 

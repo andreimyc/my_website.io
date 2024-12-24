@@ -1,4 +1,4 @@
-/* Основные цвета для электрики */
+/* Определение основных цветов сайта */
 :root {
     --primary-color: #2c3e50;    /* Темно-синий */
     --accent-color: #f39c12;     /* Оранжевый */
@@ -9,7 +9,7 @@
     --danger: #e74c3c;           /* Красный */
 }
 
-/* Общие стили */
+/* Базовые стили для всего сайта */
 html, body {
     height: 100%;
     margin: 0;
@@ -276,7 +276,7 @@ footer a:hover {
     color: var(--primary-color);
 }
 
-/* Добавьте эти стили для уведомления */
+/* Стили для уведомлений */
 .notification {
     position: fixed;
     top: 20px;
@@ -292,6 +292,7 @@ footer a:hover {
     transition: opacity 0.3s ease;
 }
 
+/* Стили для таймера в уведомлении */
 .notification-timer {
     position: absolute;
     top: -8px;
@@ -307,6 +308,7 @@ footer a:hover {
     font-weight: bold;
 }
 
+/* Анимация появления уведомления */
 @keyframes slideIn {
     from {
         transform: translateX(100%);
