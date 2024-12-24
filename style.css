@@ -1,11 +1,12 @@
 /* Основные цвета для электрики */
 :root {
     --primary-color: #2c3e50;    /* Темно-синий */
-    --accent-color: #f39c12;     /* Оранжевый (как электрические искры) */
+    --accent-color: #f39c12;     /* Оранжевый */
     --light-gray: #ecf0f1;       /* Светло-серый */
     --dark-gray: #34495e;        /* Темно-серый */
     --white: #ffffff;
-    --success: #27ae60;          /* Зеленый для кнопок */
+    --success: #27ae60;          /* Зеленый */
+    --danger: #e74c3c;           /* Красный */
 }
 
 /* Общие стили */
@@ -281,13 +282,29 @@ footer a:hover {
     top: 20px;
     right: 20px;
     background-color: var(--success);
-    color: white;
+    color: var(--white);
     padding: 15px 25px;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    animation: slideIn 0.3s ease-out, fadeOut 0.5s ease-out 2s forwards;
-    pointer-events: none;
+    animation: slideIn 0.3s ease-out;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.notification-timer {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 @keyframes slideIn {
@@ -298,15 +315,6 @@ footer a:hover {
     to {
         transform: translateX(0);
         opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
     }
 }
 
